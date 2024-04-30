@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.7",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "hooks": "^0.3.2",
+    "http-proxy-middleware": "^2.0.6",
+    "mongoose": "^8.0.0",
+    "nodemon": "^3.0.1",
+    "react-redux": "^8.1.3"
+  },
+  "scripts": {
+    "server": "node server.js",
+    "hh-lab": "npm run start --prefix ../hh_lab",
+    "dev": "concurrently \"npm run server\" \"npm run hh-lab\""
+  }
+}
