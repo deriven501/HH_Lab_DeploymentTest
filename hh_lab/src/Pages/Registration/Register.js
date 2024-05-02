@@ -1,5 +1,5 @@
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Input, Label, Form } from 'reactstrap';
+//import { Button, Input, Label, Form } from 'reactstrap';
 import '../../Assets/background.css';
 import { Link, useNavigate} from 'react-router-dom';
 import React, { useState, useEffect} from 'react';
@@ -119,48 +119,48 @@ const Register = () => {
             <div className='bg'>
                 <div className="container border border-5 border-dark border-top-0 w-25 pb-5 bg-dark text-light shadow-lg mt-5">
                     <h2 className="text-center pt-1">Register New Account</h2>
-                    <Form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit}>
                         <div className="mb-3 mt-3">
-                            <Label for="userMail" className="form-label">Email:</Label>
-                            <Input type="email" className="form-control" id="userMail" placeholder="Enter email" name="email" value={formData.email} onChange={handleChange}/>
+                            <label for="userMail" className="form-label">Email:</label>
+                            <input type="email" className="form-control" id="userMail" placeholder="Enter email" name="email" value={formData.email} onChange={handleChange}/>
                             {inputError["email"] && <div style={{ color: 'red' }}>{inputError["email"]}</div>}
                         </div>
 
 
                         <div className="mb-3">
-                            <Label for="username" className="form-label">User Name:</Label>
-                            <Input type="text" className="form-control" id="username" placeholder="Enter User Name" name="username" value={formData.username} onChange={handleChange}/>
+                            <label for="username" className="form-label">User Name:</label>
+                            <input type="text" className="form-control" id="username" placeholder="Enter User Name" name="username" value={formData.username} onChange={handleChange}/>
                             {inputError["username"] && <div style={{ color: 'red' }}>{inputError["username"]}</div>}
                         </div>
 
                         <div className="mb-3">
-                            <Label for="userPass" className="form-label">Password:</Label>
-                            <Input type="password" className="form-control" id="userPass" placeholder="Enter password" name="password" value={formData.password} onChange={handleChange}/>
+                            <label for="userPass" className="form-label">Password:</label>
+                            <input type="password" className="form-control" id="userPass" placeholder="Enter password" name="password" value={formData.password} onChange={handleChange}/>
                             {inputError["password"] && <div style={{ color: 'red' }}>{inputError["password"]}</div>}
                         </div>
 
                         <div className="mb-3">
-                            <Label for="passCheck" className="form-label">Re-enter your password again:</Label>
-                            <Input type="password" className="form-control" id="passCheck" placeholder="Enter password again" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange}/>
+                            <label for="passCheck" className="form-label">Re-enter your password again:</label>
+                            <input type="password" className="form-control" id="passCheck" placeholder="Enter password again" name="confirmPassword" value={formData.confirmPassword} onChange={handleChange}/>
                             {inputError["passMatch"] && <div style={{ color: 'red' }}>{inputError["passMatch"]}</div>}
                         </div>
 
                         <div className="mb-3">
-                            <Label for="adminPass" className="form-label">If you are sign up to be an admin also, please enter a special admin passcode:</Label>
-                            <Input type="password" className="form-control" id="adminPass" placeholder="Enter admin passcode if provided" name="adminCode" value={formData.adminCode} onChange={handleChange} />
+                            <label for="adminPass" className="form-label">If you are sign up to be an admin also, please enter a special admin passcode:</label>
+                            <input type="password" className="form-control" id="adminPass" placeholder="Enter admin passcode if provided" name="adminCode" value={formData.adminCode} onChange={handleChange} />
                         </div>
 
                         <div className="d-flex justify-content-center">
-                            <Button type="submit" color="primary">Submit</Button>
+                            <button type="submit" color="primary">Submit</button>
                         </div>
-                    </Form>
+                    </form>
                         <hr/>
                     <div class="d-flex justify-content-center pt-3">
-                            <Link to='/Login'><Button type="button" color="primary">Go back to log-in page</Button></Link>
+                            <Link to='/Login'><button type="button" color="primary">Go back to log-in page</button></Link>
                     </div>
 
                     <div class="d-flex justify-content-center pt-5">
-                            <Link to='/'><Button type="button" color="primary">Go back to front page</Button></Link>
+                            <Link to='/'><button type="button" color="primary">Go back to front page</button></Link>
                     </div>
                 </div>
             </div>

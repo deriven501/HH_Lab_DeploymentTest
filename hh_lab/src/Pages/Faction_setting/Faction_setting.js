@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button, Input, Label} from 'reactstrap';
+//import { Button, Input, Label} from 'reactstrap';
 import '../../Assets/background.css';
 import { Link } from 'react-router-dom';
 import LoyalIcon from '../../Assets/loyalist_icon.png'
@@ -23,7 +23,7 @@ const Faction_setting = () => {
                                     <div class="p-3 border bg-secondary text-center text-black">
                                         <img src={LoyalIcon} class="img-fluid" alt="..." width="250" height="200"/>
                                         <p class="mt-2">Loyalist</p>
-                                        <Input type="radio" id="factionSide" name="factionSide" value="1"/>
+                                        <input type="radio" id="factionSide" name="factionSide" value="1"/>
                                     </div>
                                 </div>
 
@@ -31,15 +31,15 @@ const Faction_setting = () => {
                                     <div class="p-3 border bg-secondary text-center text-black">
                                         <img src={TraitorIcon} class="img-fluid" alt="..." width="250" height="200"/>
                                         <p class="mt-2">Traitor</p>
-                                        <Input type="radio" id="factionSide" name="factionSide" value="0"/>
+                                        <input type="radio" id="factionSide" name="factionSide" value="0"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <hr/>
                         <div class="mb-3 mt-3">
-                            <Label for="armyName" class="form-label">Name of this army:</Label>
-                            <Input type="text" class="form-control" id="armyName" placeholder="Enter name of your Army" name="armyName"/>
+                            <label for="armyName" class="form-label">Name of this army:</label>
+                            <input type="text" class="form-control" id="armyName" placeholder="Enter name of your Army" name="armyName"/>
                         </div>
 
                         <div class="mb-3 mt-3">
@@ -77,16 +77,16 @@ const Faction_setting = () => {
 
                         <div class="mb-3 mt-3">
                             <label for="pointsValue" class="form-label">Army's Points Value:</label>
-                            <Input type="text" class="form-control" id="pointsValue" placeholder="Enter army's points value" name="pointsValue"/>
+                            <input type="text" class="form-control" id="pointsValue" placeholder="Enter army's points value" name="pointsValue"/>
                         </div>
 
                         <div class="text-center">
-                            <Button type="submit" class="btn btn-primary">Submit</Button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
                         </div>
                     </form>
 
                     <div class="d-flex justify-content-center pt-3">
-                            <Link to='/'><Button type="button" color="primary">Go back to front page</Button></Link>
+                            <Link to='/'><button type="button" color="primary">Go back to front page</button></Link>
                     </div>
                 </div>
             </div> 

@@ -5,7 +5,6 @@ import Register from '../Pages/Registration/Register';
 import FactionSetting from '../Pages/Faction_setting/Faction_setting';
 import Userprofile from '../Pages/Userprofile/Userprofile'
 import RegComplete from '../Components/regComplete'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {

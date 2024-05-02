@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import { Button } from 'reactstrap';
+//import { Button } from 'reactstrap';
 import '../../Assets/background.css';
 import { Link } from 'react-router-dom';
 import BANNER from '../../Assets/HHLogo.png'
@@ -20,15 +20,15 @@ class Landing extends Component {
                     <div class="container border border-5 border-dark border-top-0 w-25 pb-5 bg-dark text-light shadow-lg">
                         <div class="d-flex justify-content-center pt-2">
                             <Link to="/Login">
-                                <Button color="primary">Log-in</Button>
+                                <button color="primary">Log-in</button>
                             </Link>
                         </div>  
                         <br/>
                         <div class="d-flex justify-content-center pt-2">
                             <Link to="/Faction_Setting">
-                                <Button color="primary">
+                                <button color="primary">
                                     Create List without account
-                                </Button>
+                                </button>
                             </Link> 
                         </div>  
 

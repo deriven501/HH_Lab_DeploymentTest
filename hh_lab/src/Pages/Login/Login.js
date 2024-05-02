@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form'
 //import 'bootstrap/dist/css/bootstrap.min.css';
-import {Button} from 'reactstrap';
+//import {Button} from 'reactstrap';
 import { useDispatch } from "react-redux";
 import { login } from "../../store/slices/authSlice";
 import '../../Assets/background.css';
@@ -57,7 +57,7 @@ const Login = () => {
             <div className='bg'>
                 <div className="container border border-5 border-dark border-top-0 w-25 pb-5 bg-dark text-light shadow-lg mt-5">
                     <div className="pt-3">
-                        <Link to="/"><Button color="primary" class="pt-5">Back</Button></Link>
+                        <Link to="/"><button color="primary" class="pt-5">Back</button></Link>
                     </div>
                     <h2 className="text-center pt-1">Log-In</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
@@ -74,13 +74,13 @@ const Login = () => {
                         </div>
                         
                         <div className="d-flex justify-content-center">
-                            <Button type="submit" color="primary">Submit</Button>
+                            <button type="submit" color="primary">Submit</button>
                         </div>             
                     </form>
                     <hr />
                     <h3 className="text-center">No account?</h3>
                     <div className="d-flex justify-content-center">
-                        <Link to="/Register"><Button type="submit" color="primary" id="registration" >Register</Button></Link>
+                        <Link to="/Register"><button type="submit" color="primary" id="registration" >Register</button></Link>
                     </div>
                 </div>
 

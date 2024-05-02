@@ -15,6 +15,6 @@
   "scripts": {
     "start": "node server.js",
     "hh-lab": "npm run start --prefix ../hh_lab",
-    "start:dev": "\"nodemon run server\""
+    "start:dev": "nodemon run server"
   }
 }
